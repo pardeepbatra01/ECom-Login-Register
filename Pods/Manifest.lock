@@ -1,0 +1,22 @@
+PODS:
+  - IQKeyboardManagerSwift (7.1.1)
+  - SwiftMessages (10.0.0):
+    - SwiftMessages/App (= 10.0.0)
+  - SwiftMessages/App (10.0.0)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: d7f3d3a562c237a0e7335e657cd598c452f57f1b
+  SwiftMessages: d3540f0f981dfbac25bd2ae9a662effa48f76f92
+
+PODFILE CHECKSUM: b46e8a75461c53f2fe3ffbc53bc7f8b7f6ca9c25
+
+COCOAPODS: 1.15.2

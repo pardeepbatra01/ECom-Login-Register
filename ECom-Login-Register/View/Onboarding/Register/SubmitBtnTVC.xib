@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23077.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23068.1"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="143" id="KGk-i7-Jjw" customClass="SubmitBtnTVC" customModule="Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="143"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="il4-pM-VgN">
+                        <rect key="frame" x="16" y="49" width="302" height="45"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="irj-Kd-Q7u"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Submit"/>
+                        <connections>
+                            <action selector="submitBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="P9X-7w-hbn"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="il4-pM-VgN" secondAttribute="trailing" constant="16" id="P31-U9-bs0"/>
+                    <constraint firstItem="il4-pM-VgN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="cSU-dw-9ZH"/>
+                    <constraint firstItem="il4-pM-VgN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="myD-yy-IhB"/>
+                    <constraint firstItem="il4-pM-VgN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="shT-iK-iEM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="submitBtn" destination="il4-pM-VgN" id="jl9-OT-MrG"/>
+            </connections>
+            <point key="canvasLocation" x="76.33587786259541" y="23.591549295774648"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23077.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23068.1"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LogoutCell" customModule="Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="262" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="262" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoE-Mh-4Yo">
+                        <rect key="frame" x="16" y="100" width="230" height="45"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                        <state key="normal" title="Logout">
+                            <imageReference key="image" image="rectangle.portrait.and.arrow.right.fill" catalog="system" symbolScale="medium"/>
+                        </state>
+                        <connections>
+                            <action selector="logoutBtnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="uH3-go-MKD"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZoE-Mh-4Yo" secondAttribute="bottom" constant="10" id="505-9S-ymx"/>
+                <constraint firstAttribute="trailing" secondItem="ZoE-Mh-4Yo" secondAttribute="trailing" constant="16" id="Qon-dN-Qhc"/>
+                <constraint firstItem="ZoE-Mh-4Yo" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.290323" id="RiN-63-7dy"/>
+                <constraint firstItem="ZoE-Mh-4Yo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="100" id="oWm-SD-hXK"/>
+                <constraint firstItem="ZoE-Mh-4Yo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="z6I-WM-nBi"/>
+            </constraints>
+            <size key="customSize" width="262" height="155"/>
+            <connections>
+                <outlet property="logoutBtn" destination="ZoE-Mh-4Yo" id="EWj-ff-gSG"/>
+            </connections>
+            <point key="canvasLocation" x="242.74809160305344" y="24.295774647887324"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="rectangle.portrait.and.arrow.right.fill" catalog="system" width="128" height="109"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
